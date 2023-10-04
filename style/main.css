@@ -1,0 +1,101 @@
+.container{
+    
+    width: 80vw;
+    margin: auto;
+    
+}
+main{}
+
+section{display: flex;}
+
+#main-left{
+    z-index: -10;
+    width: 45%;
+    min-height: 39vw;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#main-right{width: 50%;margin: auto;}
+#logo-p-black{
+    color: #111;
+    font-family: Futura PT;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+#logo-p-red{
+    color: #AB303C;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#main-right-p-1{background: linear-gradient(90deg, #111 -8.85%, #B1B1B1 116.12%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;font-family: Futura PT, arial;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 450;
+    margin-bottom: 2vw;
+}
+
+#main-right-p-2{
+    color: #111;
+font-family: Futura PT,arial;
+font-size: 1.25vw;
+font-style: normal;
+font-weight: 400;
+margin-bottom: 2vw;
+}
+
+.main-right-btn{
+    background: #30AB4C;display: flex;
+    padding: .8vw 3.2vw;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+.main-right-btn > p{
+    color: #F6F6F6;
+font-family: Futura PT;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-child{
+
+
+}
+
+#header-hr{width: 10%;
+
+}
+
+article{display: flex;justify-content: space-between;}
+
+.art-d{width: 30%;}
+
+.art-h{}
+
+.art-hr{}
+
+.art-p{}
+
+.art-img{}
