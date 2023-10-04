@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+body{
+    background: #F6F6F6;
+}
+
+nav{
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+menu{
+    flex-grow: 2;
+}
+
+#logo{
+    flex-grow: 1;
+}
+
+#menu-content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.a-menu{
+    color: #111;
+    font-family: Futura PT, arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+#expand-button{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) { 
+    menu{
+        max-width: fit-content;
+        margin-right: 1%;
+    }
+
+    .menu-btn{
+        background-color: white;
+        align-items: center;
+        display: flex;
+        border: none;
+        padding: 0 0 0 5%;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    #logo{
+        margin-left: 1%;
+    }
+
+    nav{
+        justify-content: space-around;
+    }
+
+
+    #menu-content{
+        display: none;
+    }
+    
+    #expand-button{
+        display: block;
+    }
+
+    #hamburger-svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        background-color: transparent;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+        height: 100px;
+    }
+
+    @keyframes myAnim {
+        0%   {top: 0px; opacity: 0; z-index: -10000;}
+        100% {top: 122px; opacity: 1; z-index: 1000;}
+    }
+
+    #co-nas-wyroznia{
+        margin: 0;
+    }
+
+    #buttons{
+        display: none;
+        position: absolute;
+        top: 122px;
+        left: 0px;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+    
+    .line {
+        fill: none;
+        stroke: rgb(0, 0, 0);
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+    .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+    .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+    }
+    .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+  
+  }
