@@ -1,0 +1,110 @@
+article{
+    background-color: white;
+}
+
+#article-header{
+    padding-top: 6vw;
+    text-align: center;
+}
+#article-header > h1 {
+    background: linear-gradient(90deg, #111 -8.85%, #B1B1B1 58.84%, #696969 91.39%, #B1B1B1 116.12%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+font-size: 3vw;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+padding-bottom: 1vw;
+}
+#article-header > hr {
+    width: 9vw;
+    margin: auto;
+}
+
+#article-header > p {
+    margin-top: 2vw;
+    color: #111;
+text-align: center;
+
+font-size: 1.4vw;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+padding-bottom: 10vw;
+}
+
+
+#sklad{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#left,#right{width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#siar-gluk,#siar-chond,#kwas-hial,#czar-paz,#wit-c,#msm{
+    position: relative;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#siar-gluk>img,#siar-chond>img,#kwas-hial>img,#czar-paz>img,#wit-c>img,#msm > img{
+    width: 4vw;
+    position: absolute;
+}
+
+#siar-gluk > h1,#siar-chond >h1,#kwas-hial>h1,#czar-paz>h1,#wit-c>h1,#msm > h1{
+    font-size: 1.3vw;
+    position: absolute;
+    top: 5vw;
+
+}
+
+#siar-gluk>hr,#siar-chond>hr,#kwas-hial>hr,#czar-paz>hr,#wit-c>hr,#msm > hr{
+    width: 40%;
+    margin: auto;
+    visibility: hidden;
+    position: absolute;
+
+}
+
+#siar-gluk>h5,#siar-chond>h5,#kwas-hial>h5,#czar-paz>h5,#wit-c>h5,#msm > h5{
+    font-size: .7vw;
+    position: absolute;
+    top: 8vw;
+
+}
+
+#siar-gluk>p,#siar-chond>p,#kwas-hial>p,#czar-paz>p,#wit-c>p,#msm > p{
+    font-size: .9vw;
+    position: absolute;
+top: 11vw;
+}
+
+#middle{width: 30vw;position: relative;}
+
+#middle > button{
+    background: #AD4844;
+    display: inline-flex;
+padding: .5vw 2vw;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+#middle > button > p{
+    color: #F6F6F6;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

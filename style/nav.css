@@ -3,6 +3,7 @@
 }
 body{
     background: #F6F6F6;
+    font-family: Futura PT,arial;
 }
 
 nav{
@@ -32,7 +33,6 @@ menu{
 
 .a-menu{
     color: #111;
-    font-family: Futura PT, arial;
     font-size: 16px;
     font-style: normal;
     font-weight: 450;
