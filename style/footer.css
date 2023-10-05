@@ -1,0 +1,35 @@
+footer>select{
+    border: none;display: inline-flex;
+                padding: 10px 40px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px; background: #AD4844;color: #F6F6F6;font-weight: 700;
+}
+footer>p{
+    border: 1px solid #AD4844;display: inline-flex;padding-left: 10px;
+            
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer--base {
+    transform: translateZ(0);
+  }
+  .parallax__layer--back {
+    transform: translateZ(-1px);
+  }
+  
