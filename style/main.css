@@ -4,7 +4,9 @@
     margin: auto;
     
 }
-main{}
+main{
+    height: 120vw;
+}
 
 section{display: flex;}
 
@@ -77,10 +79,19 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 #header-child{
-
+    background: linear-gradient(90deg, #111 -8.85%, #B1B1B1 58.84%, #696969 91.39%, #B1B1B1 116.12%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;text-align: center;
+    font-family: Futura PT;
+    font-size:2.5vw;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 4vw
 
 }
 
@@ -88,14 +99,100 @@ header{
 
 }
 
-article{display: flex;justify-content: space-between;}
+#info{display: flex;justify-content: space-between;}
 
-.art-d{width: 30%;}
+.art-d{width: 25%;}
 
-.art-h{}
+.art-h{
+    text-align: center;
+    color: #111;
+    font-family: Futura PT,arial;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    position: absolute;
+    top: 0vw;
+}
 
-.art-hr{}
+.art-hr{
+    width: 30%;
+    margin: 2vw auto;
+    position: absolute;
+    top: 5vw;
+    left: 35%;
+}
 
-.art-p{}
+.art-p{
+    color: #111;
+    font-family: Futura PT,arial;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 10vw;
+    text-align: center;
+}
 
-.art-img{}
+ol{
+    position: relative;
+    z-index: 1;
+    font-family: Futura PT,arial;
+    font-size: 1vw;
+    width: 75%;
+    margin: auto;
+    top: 10vw;
+}
+ol li{
+    font-weight: 700;
+}
+li::before{
+    content: "";
+    position:relative;
+    left: -1.67vw;
+    top: .6vw;
+    z-index:-1;
+    display:inline-block;
+    width:2vw;
+    height:2vw;
+    border-radius: 42px;
+    background: #FFF;
+    box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.art-img{position: absolute;top: 20vw;}
+
+@media only screen and (max-width: 600px) { 
+    ol{
+        width: 100%;
+        margin-left: -5vw;
+    }
+    /* #info{
+        flex-direction: column;
+    }
+
+    .art-d{
+        position: static;
+    }
+
+    .art-hr{
+        position: static;
+    }
+
+    .art-h{
+        position:static;
+    }
+
+    .art-img{
+        position:static;
+    }
+
+    .art-p{
+        position:static;
+    }
+
+    ol{
+        position: static;
+    } */
+}
