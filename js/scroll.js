@@ -1,12 +1,33 @@
-let someElement = document.querySelector('whatever');
+let firstAnchor = document.getElementById('first-href');
+let secondAnchor = document.getElementById('second-href');
+let thirdAnchor = document.getElementById('third-href');
+
+let firstline = document.getElementById('firstline');
+let secondline = document.getElementById('secondline');
+let thirdline = document.getElementById('thirdline');
+
 
 window.onscroll = function(){
-    //TOP
-    if(someElement.getBoundingClientRect().top <= 0){
-        console.log("TRIGGER: top of div reached.");
+    if(firstAnchor.getBoundingClientRect().top >= 0) {
+        firstline.style.visibility = "hidden";
+        secondline.style.visibility = "hidden";
+        thirdline.style.visibility = "hidden";
+
+    } 
+    if(firstAnchor.getBoundingClientRect().top <= 1) {
+        firstline.style.visibility = "visible";
+        secondline.style.visibility = "hidden";
+        thirdline.style.visibility = "hidden";
+
+    } 
+    if(secondAnchor.getBoundingClientRect().top <= 0){
+        firstline.style.visibility = "hidden";
+        secondline.style.visibility = "visible";
+        thirdline.style.visibility = "hidden";
     }
-    //BOTTOM
-    if(someElement.getBoundingClientRect().bottom <= 0){
-        console.log("TRIGGER: bottom of div reached.");
+    if(thirdAnchor.getBoundingClientRect().top <= 0){
+        firstline.style.visibility = "hidden";
+        secondline.style.visibility = "hidden";
+        thirdline.style.visibility = "visible";
     }
 }
