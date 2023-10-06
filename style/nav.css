@@ -46,6 +46,11 @@ menu{
     display: none;
 }
 
+.lines{
+    visibility: hidden;
+}
+
+
 @media only screen and (max-width: 600px) { 
     menu{
         max-width: fit-content;
@@ -147,3 +152,4 @@ menu{
     }
   
   }
+
