@@ -1,9 +1,12 @@
 #mania{
     display: flex;
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px;
     justify-content: center;
     width: 100vw;
     background-color: white;
+    z-index: -1;
 }
 
 #lewamania{
@@ -25,7 +28,8 @@
 }
 
 #select-container{
-    margin: 8vw auto;
+    display: flex;
+    height: 16vw;
     text-align: center;
 }
 
@@ -81,6 +85,7 @@
 
 footer{
     height: 150vh;
+    background-color: #F6F6F6;
 }
 
 #popup{
