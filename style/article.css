@@ -1,5 +1,6 @@
 article{
     background-color: white;
+    padding-bottom: 5vw;
 }
 
 #article-header{
@@ -100,7 +101,9 @@ padding: .5vw 2vw;
 justify-content: center;
 align-items: center;
 gap: 10px;
+border: none;
 }
+
 #middle > button > p{
     color: #F6F6F6;
     font-size: 1.2vw;
@@ -108,3 +111,4 @@ gap: 10px;
     font-weight: 700;
     line-height: normal;
 }
+
