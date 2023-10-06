@@ -97,7 +97,18 @@ header{
 
 #info{display: flex;justify-content: space-between;}
 
-.art-d{width: 25%;}
+.art-d{width: 25%;height: 36vw;}
+
+.art-d:hover hr{
+    visibility: visible;
+}
+
+.hiddenline{
+    position: absolute;
+    top: 38vw;
+    width: 100%;
+    visibility: hidden;
+}
 
 .art-h{
     text-align: center;
@@ -162,31 +173,4 @@ li::before{
         width: 100%;
         margin-left: -5vw;
     }
-    /* #info{
-        flex-direction: column;
-    }
-
-    .art-d{
-        position: static;
-    }
-
-    .art-hr{
-        position: static;
-    }
-
-    .art-h{
-        position:static;
-    }
-
-    .art-img{
-        position:static;
-    }
-
-    .art-p{
-        position:static;
-    }
-
-    ol{
-        position: static;
-    } */
 }
