@@ -68,7 +68,7 @@
 #grid{
     display: grid;
     column-gap: 4%;
-    row-gap: 8%;
+    row-gap: 50px;
     grid-template-columns: auto auto auto auto;
     width: 80vw;
     margin: auto;
@@ -84,7 +84,7 @@
 }
 
 footer{
-    height: 150vh;
+    height: 100vh;
     background-color: #F6F6F6;
 }
 
