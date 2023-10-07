@@ -142,3 +142,7 @@ html{scroll-behavior:smooth}
 #third-href{
     top: 230vw;
 }
+
+button:hover,a:hover,select:hover{
+    cursor: pointer;
+}
