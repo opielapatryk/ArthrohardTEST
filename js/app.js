@@ -4,6 +4,7 @@ let footer = document.querySelector("footer");
 let isFetching = false;
 let pageNumber = 1;
 let hasMore = true;
+let loadFirstProducts = false;
 
 document.querySelector('select').addEventListener('change', function() {
     pageSize = parseInt(this.value);
@@ -30,15 +31,23 @@ async function getapi() {
 }
 
 
-window.addEventListener("scroll", ()=>{
-    const totalHeight = window.innerHeight + window.scrollY;
+window.addEventListener("scroll", () => {
+
+    let totalHeight = window.innerHeight + window.scrollY;
+    let offsethght = document.body.scrollHeight - 1
+    
+
+    if(!loadFirstProducts && totalHeight >=document.getElementById("grid").offsetTop + 122){
+        loadFirstProducts = true;
+        getapi();
+    }
 
     if(isFetching || !hasMore){
         return
     } 
     
-    if(totalHeight >= document.body.offsetHeight - 1 ){
+    if(totalHeight >= offsethght){
         getapi();
     }
-})
 
+})
