@@ -8,6 +8,8 @@ let loadFirstProducts = false;
 
 document.querySelector('select').addEventListener('change', function() {
     pageSize = parseInt(this.value);
+    pageNumber = 1;
+    grid.innerHTML = "";
     getapi();
 });
 
@@ -26,6 +28,24 @@ async function getapi() {
         sqr.setAttribute("id", "sqr");
         sqr.innerHTML = `ID: ${product.id}`;
         grid.appendChild(sqr);
+        sqr.addEventListener("click", () => {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("popup").innerHTML = `<p id="exit" style="cursor:pointer;">x</p>
+            <div>
+                <p>ID: ${product.id}</p>
+                <p>Nazwa: ${product.name}</p>
+                <p>Wartość: ${product.value}</p>
+            </div>`;
+            let exit = document.getElementById("exit");
+
+            exit.addEventListener("click", () => {
+                document.getElementById("popup").style.display = "none";
+            })
+        })
+
+        
+
+        
     }
     pageNumber++;
 }
